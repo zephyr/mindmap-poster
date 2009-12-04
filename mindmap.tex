@@ -1,0 +1,29 @@
+%% Copyright 2009 Dennis Heidsiek, available under the Licence LPPL 1.3+ (see README.markdown)
+%% Heavily inspired by the PGF/TikZ manual
+\documentclass{article}
+\pagestyle{plain}
+\usepackage{xltxtra}
+\setmainfont{Gentium}%Yanone Kaffeesatz}
+\usepackage{tikz}
+\usetikzlibrary{trees,mindmap}
+
+\begin{document}
+\begin{tikzpicture}
+  \path[mindmap, concept color=red, text=white]
+    node[concept] {This document}
+    [clockwise from=0]
+    child[concept color=green!50!black] { node[concept] {Neo-Taſtatur} }
+    child { node[concept] {GNU/Linux\footnote{Okay, in fact that’s a lie :-(}} }    
+    child[concept color=blue] {
+      node[concept] {\TeX}
+      [clockwise from=-30]
+      child { node[concept] {Plain\TeX} }
+      child {
+        node[concept] {\LaTeX}
+        child[concept color=red!50!black] { node[concept] {TikZ/PGF} }
+      }
+      child { node[concept] {\XeTeX} }
+    }
+    child[concept color=orange] { node[concept] {Friends} };
+\end{tikzpicture}
+\end{document}
