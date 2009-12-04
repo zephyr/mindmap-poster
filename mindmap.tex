@@ -6,11 +6,12 @@
 \setmainfont{Gentium}%Yanone Kaffeesatz}
 \usepackage{tikz}
 \usetikzlibrary{trees,mindmap}
+\usepackage{hyperref}
 
 \begin{document}
 \begin{tikzpicture}
   \path[mindmap, concept color=red, text=white]
-    node[concept] {This document}
+    node[concept] {This document\\\href{http://github.com/zephyr/mindmap-poster}{(Sourcecode)}}
     [clockwise from=0]
     child[concept color=green!50!black] { node[concept] {Neo-Taſtatur} }
     child { node[concept] {GNU/Linux\footnote{Okay, in fact that’s a lie :-(}} }    
