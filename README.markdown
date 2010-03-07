@@ -32,7 +32,7 @@ Just type
 
 ## Licence
 
-Copyright 2009 by Dennis Heidsiek
+Copyright 2009 by [Dennis Heidsiek](http://www.google.com/profiles/Dennis.Heidsiek)
 
 This work may be distributed and/or modified under the conditions of the LaTeX Project Public License, either version 1.3 of this license or (at your option) any later version. All versions of this license (including the latest one) can be accessed online [from the homepage of the LaTeX-project](http://www.latex-project.org/lppl/), but you can also find a local copy of version 1.3 in the LICENCE file.
 
